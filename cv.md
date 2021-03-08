@@ -2,6 +2,7 @@
 
 ## Front-end Developer
 
+## Summary
 I place a lot of value on continually educating myself and ready to spend a great deal of my spare time learning and growing professionally and personally.
 
 ## Contacts
