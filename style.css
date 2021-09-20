@@ -121,7 +121,8 @@ body.lock {
 .code,
 .education,
 .english,
-.video-cv {
+.video-cv,
+.projects {
   background-color: #ffffff;
   padding: 30px 0;
 }
@@ -129,7 +130,8 @@ body.lock {
 .summary__text,
 .skills__item,
 .education__item,
-.english__text {
+.english__text,
+.projects__text {
   font-size: 20px;
 }
 
@@ -150,6 +152,10 @@ body.lock {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+.project1 img {
+  width: 100%;
 }
 
 /* Footer */
