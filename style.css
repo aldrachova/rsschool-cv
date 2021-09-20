@@ -14,3 +14,48 @@ ul,
 li {
   list-style: none;
 }
+
+body {
+  height: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background-color: #333333;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.header {
+  width: 100%;
+}
+
+.header__container {
+  min-height: 100px;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+
+.burger__icon {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__link {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
