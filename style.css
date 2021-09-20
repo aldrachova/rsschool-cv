@@ -116,25 +116,24 @@ body.lock {
 }
 
 /* Summary */
-.summary {
+.summary,
+.skills {
   background-color: #ffffff;
   padding: 30px 0;
 }
 
-.summary__text {
+.summary__text,
+.skills__item {
   font-size: 20px;
 }
 
 
 /* Footer */
 .footer__container {
-	padding: 0 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	max-width: 1140px;
-	margin: 0 auto;
 }
 .github {
 	display: block;
