@@ -119,14 +119,16 @@ body.lock {
 .summary,
 .skills,
 .code,
-.education {
+.education,
+.english {
   background-color: #ffffff;
   padding: 30px 0;
 }
 
 .summary__text,
 .skills__item,
-.education__item {
+.education__item,
+.english__text {
   font-size: 20px;
 }
 
