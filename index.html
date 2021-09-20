@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alena Drachova</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -42,6 +50,7 @@
             </ul>
           </nav>
         </div>
+      </div>
     </header>
     <main class="main">
       <section class="contacts" id="contacts">
@@ -51,20 +60,124 @@
             <h2 class="title">Frontend Developer</h2>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <a class="phone" href="tel:+375445156043">Phone: +375445156043</a>
+                <a class="phone" href="tel:+375445156043"
+                  >Phone: +375445156043</a
+                >
               </li>
               <li class="contacts__item">
-                <a class="email" href="mailto:al.drachova@gmail.com" >Email: al.drachova@gmail.com</a>
+                <a class="email" href="mailto:al.drachova@gmail.com"
+                  >Email: al.drachova@gmail.com</a
+                >
               </li>
             </ul>
           </div>
           <figure class="contacts__photo">
-            <img src="./img/photo.jpg" alt="Applicant photo">
-          </figure> 
+            <img src="./img/photo.jpg" alt="Applicant photo" />
+          </figure>
+        </div>
+      </section>
+      <section class="summary" id="summary">
+        <div class="summary__container container">
+          <h3 class="heading">summary</h3>
+          <p class="summary__text">
+            I place a lot of value on continually educating myself and ready to
+            spend a great deal of my spare time learning and growing
+            professionally and personally.
+          </p>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="skills__container container">
+          <h3 class="heading">skills</h3>
+          <ul class="skills__list">
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">Java Script</li>
+            <li class="skills__item">Git</li>
+          </ul>
+        </div>
+      </section>
+      <section class="code" id="code">
+        <div class="code__container container">
+          <h3 class="heading">code example</h3>
+          <pre>
+            <code class="javascript">
+// Convert a linked list to a string
+function stringify(list) {
+if(!list) return 'null';
+const arr = [];
+let current = list;
+while(current.next) {
+arr.push(current.data);
+current = current.next;
+}
+arr.push(current.data);
+return arr.join(' -> ') + ' -> null';
+}  
+            </code>
+          </pre>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <div class="education__container container">
+          <h3 class="heading">education</h3>
+          <ul class="education__list">
+            <li class="education__item">
+              Computer Science Basics on learn.epam.com
+            </li>
+            <li class="education__item">Command Line Basics on Hexlet</li>
+            <li class="education__item">Git Basic Course on GeekBrains</li>
+            <li class="education__item">
+              HTML, CSS, JavaScript courses on code-basics.com
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="english" id="english">
+        <div class="english__container container">
+          <h3 class="heading">english</h3>
+          <p class="english__text">B1 (Intermediate)</p>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="projects__container container">
+          <h3 class="heading">projects</h3>
+          <a
+            class="project1"
+            href="https://aldrachova.github.io/martaup/"
+            target="_blank"
+          >
+            <img src="./img/martaup.jpg" alt="MartaUp project" />
+          </a>
+          <p class="projects__text">Project was created using HTML, CSS and JQuery.</p>
+        </div>
+      </section>
+      <section class="video-cv" id="video">
+        <div class="video-cv__container container">
+          <h3 class="heading">video-cv</h3>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/AMeqTWKDtN0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <a class="github" href="https://github.com/aldrachova" target="_blank"
+          >aldrachova</a
+        >
+        <a class="rss" href="https://rs.school/js/" target="_blank">
+          <span class="rss-year">'21</span>
+        </a>
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

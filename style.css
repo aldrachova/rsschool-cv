@@ -36,6 +36,12 @@ body.lock {
   padding: 0 40px;
 }
 
+.heading {
+  margin-bottom: 15px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
 /* Header */
 .header {
   width: 100%;
@@ -107,6 +113,101 @@ body.lock {
 .contacts__photo img{
   max-width: 100%;
   height: 100%;
+}
+
+/* Content */
+.summary,
+.skills,
+.code,
+.education,
+.english,
+.video-cv,
+.projects {
+  background-color: #ffffff;
+  padding: 30px 0;
+}
+
+.summary__text,
+.skills__item,
+.education__item,
+.english__text,
+.projects__text {
+  font-size: 20px;
+}
+
+.education__item:not(:last-child) {
+  margin: 10px 0;
+}
+
+.video-wrapper {
+  flex: 0 0 57%;
+  position: relative;
+  padding-bottom: 42.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border: 0;
+}
+
+.project1 img {
+  width: 100%;
+}
+
+/* Footer */
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.github {
+	display: block;
+	width: 120px;
+	height: 45px;
+	padding-left: 45px;
+	background-image: url("./img/github.svg");
+	background-size: 35px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	line-height: 45px;
+	color: #cbd5de;
+	font-size: 16px;
+	transition: 0.3s;
+}
+.github:hover {
+	color: #fff;
+}
+.rss {
+	display: block;
+	position: relative;
+	width: 86px;
+	height: 32px;
+	background-image: url("./img/rss.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 111px;
+}
+.rss-year {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 21px;
+	letter-spacing: -2px;
+	color: #ffffff;
+	line-height: 0.9;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.rss:hover .rss-year {
+	right: -5px;
+	letter-spacing: 0;
 }
 
 @media (max-width: 1024px) {
