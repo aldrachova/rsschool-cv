@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alena Drachova</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -82,6 +85,27 @@
             <li class="skills__item">Git</li>
           </ul>
         </div>   
+      </section>
+      <section class="code" id="code">
+        <div class="code__container container">
+          <h3 class="heading">code example</h3>
+          <pre>
+            <code class="javascript">
+// Convert a linked list to a string
+function stringify(list) {
+if(!list) return 'null';
+const arr = [];
+let current = list;
+while(current.next) {
+arr.push(current.data);
+current = current.next;
+}
+arr.push(current.data);
+return arr.join(' -> ') + ' -> null';
+}  
+            </code>
+          </pre>
+        </div>
       </section>
     </main>
     <footer class="footer">

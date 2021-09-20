@@ -115,9 +115,10 @@ body.lock {
   height: 100%;
 }
 
-/* Summary */
+/* Content */
 .summary,
-.skills {
+.skills,
+.code {
   background-color: #ffffff;
   padding: 30px 0;
 }
