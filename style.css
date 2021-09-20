@@ -118,16 +118,21 @@ body.lock {
 /* Content */
 .summary,
 .skills,
-.code {
+.code,
+.education {
   background-color: #ffffff;
   padding: 30px 0;
 }
 
 .summary__text,
-.skills__item {
+.skills__item,
+.education__item {
   font-size: 20px;
 }
 
+.education__item:not(:last-child) {
+  margin: 10px 0;
+}
 
 /* Footer */
 .footer__container {
